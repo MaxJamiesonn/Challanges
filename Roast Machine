@@ -1,0 +1,5 @@
+import random
+S_name = input("What is your name? ")
+comments = ["is a stupid name","is the worst name i have ever heard","thats my grannys name"]
+Roastname = S_name,random.choice(comments)
+print(Roastname)
