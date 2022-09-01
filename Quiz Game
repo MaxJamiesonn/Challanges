@@ -1,0 +1,73 @@
+import time
+lives = 3
+points = 0
+
+
+while lives > 0:
+    
+    question1 = input("Give an example of an integer ")
+    if question1.isdigit():
+      print("Correct")
+      points = points + 100
+      print("You now have",points,"points")
+    else:
+      print("Wrong")
+      lives = lives - 1
+      print("you lost a life")
+      print("You now have",lives,"lives remaining")
+
+    question2 = input("What data type is the letter a? ")
+    if question2 in ("CHAR,"):
+      print("Correct")
+      points = points + 100
+      print("You now have",points,"points")
+    else:
+      print("Wrong")
+      lives = lives - 1
+      print("you lost a life")
+      print("You now have",lives,"lives remaining")
+
+    question3 = input("True or False, Integers can be negitive? ")
+    if question3 in ("True","true","TRUE","T","t"):
+      print("Correct")
+      points = points + 100
+      print("You now have",points,"points")
+    else:
+      print("Wrong")
+      lives = lives - 1
+      print("you lost a life")
+      print("You now have",lives,"lives remaining")
+    if lives == 0:
+      break
+
+    question3 = input("Other than STRING, CHAR, INTEGER and BOOLEAN name another data type ")
+    if question3 in ("REAL","Real","real","DATE","date","Date"):
+      print("Correct")
+      points = points + 100
+      print("You now have",points,"points")
+    else:
+      print("Wrong")
+      lives = lives - 1
+      print("you lost a life")
+      print("You now have",lives,"lives remaining")
+    if lives == 0:
+      break
+
+    question4 = input("Give an example of a real ")
+    answer = float(question4)
+    if isinstance(answer, float):
+      print("Correct")
+      points = points + 100
+      print("You now have",points,"points")
+    else:
+      print("Wrong")
+      lives = lives - 1
+      print("you lost a life")
+      print("You now have",lives,"lives remaining")
+    if lives == 0:
+      break 
+    break
+if points >= 400:
+  print("Great Job, You finished the game")
+if points < 400:
+  print("U suck, Do the game again")
