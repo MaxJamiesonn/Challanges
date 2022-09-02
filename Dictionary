@@ -1,0 +1,8 @@
+dict ={}
+with open("monsters.txt", "r") as f:
+    for line in f:
+        line = line.strip('\n')
+        parts = line.rsplit(',')
+        dict[parts[0]] = parts[1]
+entry = input("pick a monster")
+print(dict[entry])
