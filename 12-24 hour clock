@@ -1,0 +1,10 @@
+hours = int(input('Whats the time in Hours '))
+minutes = int(input('Whats the time in Minutes '))
+tod = input("Am or Pm ")
+
+if tod in ('pm','Pm','PM'):
+  hours = hours + 12 
+  print(hours,":",minutes)
+  
+else: 
+  print(hours,minutes)
