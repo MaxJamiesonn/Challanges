@@ -1,0 +1,51 @@
+Cow001N = []
+Cow002N = []
+Cow003N = []
+Cow001M = []
+Cow002M = []
+Cow003M = []
+#Write a program for TASK 1 to record the milk yields for a week.
+#The program records and stores the identity code number and the yield every time a cow is milked.
+
+print("Hello please enter your cows yield starting from cow 001 then 002 and finally 003")
+for i in range (1):
+            Cow1M = -1
+            while Cow1M <= 0 or Cow1M >= 50 :
+                print("How much milk did cow 001 get in morining: ")
+                Cow1M = int(input("enter a number:"))
+                Cow001M.append(Cow1M)
+            Cow1N = -1
+            while Cow1N <= 0 or Cow1N >= 50 :
+                print("How much milk did cow 001 get at night: ")
+                Cow1N = int(input("enter a number:"))
+                Cow001N.append(Cow1M)
+                print("So far Cow 001 produced",Cow1M,"liters in the mornings and",Cow1N,"liters in the nights")
+                print("Now on to Cow 002")
+            
+            Cow2M = -1
+            while Cow2M <= 0 or Cow2M >= 50 :
+                    print("How much milk did cow 002 get in morining: ")
+                    Cow2M = int(input("enter a number:"))
+                    Cow002M.append(Cow2M)
+            Cow2N = -1
+            while Cow2N <= 0 or Cow2N >= 50 :
+                print("How much milk did cow 002 get at night: ")
+                Cow2N = int(input("enter a number:"))
+                Cow002N.append(Cow2M)
+                print("So far Cow 002 produced",Cow2M,"liters in the mornings and",Cow2N,"liters in the nights")
+                print("Now on to Cow 003")
+               
+            Cow3M = -1
+            while Cow3M <= 0 or Cow3M >= 50 :
+                    print("How much milk did cow 003 get in morining: ")
+                    Cow3M = int(input("enter a number:"))
+                    Cow003M.append(Cow3M)
+            Cow3N = -1
+            while Cow3N <= 0 or Cow3N >= 50 :
+                print("How much milk did cow 003 get at night: ")
+                Cow3N = int(input("enter a number:"))
+                Cow003N.append(Cow3M)
+                print("So far Cow 003 produced",Cow3M,"liters in the mornings and",Cow3N,"liters in the nights")
+                print("Now on to Cow 003")
+                
+
