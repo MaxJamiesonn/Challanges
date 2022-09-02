@@ -1,0 +1,62 @@
+
+WinList = []
+playerTiewinrecord =[]
+player1winrecord = []
+player2winrecord = []
+RockList = []
+PaperList = []
+ScissorsList = []
+test = print("Hello Would you like to play a game of Rock Paper Scissors? yes/no ")
+test = input("")
+
+for i in range (3):
+    PlayerOne = input("'Rock','Paper','Scissors'")
+    PlayerTwo = input("'Rock','Paper','Scissors'")
+    if PlayerOne == PlayerTwo:
+        print("Tie!")
+        playerTiewinrecord.append("Tie")
+
+    if PlayerOne in ["Rock","rock"]:
+        if PlayerTwo in ["Paper","paper"]:
+            print("Player Two Won!")
+            player2winrecord.append("Player Two Won")
+
+    if PlayerOne in ["Rock","rock"]:
+        if PlayerTwo in ["Scissors","Scissors"]:
+            print("Player One Won!")
+            player1winrecord.append("Player One Won")
+
+    if PlayerOne in ["Paper","paper"]:
+        if PlayerTwo in ["Rock","rock"]:
+            print("Player One Won!")
+            player1winrecord.append("Player One Won")
+    if PlayerOne in ["Paper","paper"]:
+        if PlayerTwo in ["scissors","Scissors"]:
+            print("Player Two Wins!")
+            player2winrecord.append("Player Two Won")
+
+    if PlayerOne is ["Scissors","scissors"]:
+        if PlayerTwo in ["Paper","paper"]:
+            print("Player One Won")
+            player1winrecord.append("Player One Won")
+
+    if PlayerOne is ["Scissors","scissors"]:
+        if PlayerTwo in ["Rock","rock"]:
+            print("Player Two Won")
+            player2winrecord.append("Player Two Won")
+
+print("Player One")
+print(len(player1winrecord))
+print("Player Two")
+print(len(player2winrecord))
+print("Ties")
+print(len(playerTiewinrecord))
+
+if player1winrecord == player2winrecord:
+        print("It was a Tie")
+        
+if player1winrecord > player2winrecord:
+        print("Player One Won!")
+        
+if player1winrecord < player2winrecord:
+        print("Player Two Won!")
