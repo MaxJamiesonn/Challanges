@@ -1,0 +1,18 @@
+RM = ("RM")
+
+cash = int(input("how much money do u have? "))
+
+currency = input("pick a currency: ")
+
+
+
+if currency == ("pounds"): 
+    print(f"you have £{cash}")
+elif currency == ("dollars"): 
+    print(f"you have ${cash}")
+elif currency == ("ringgit"): 
+    print(f"you have RM{cash}")
+elif currency == ("euros"): 
+    print(f"you have €{cash}")
+else:
+    print("we currently dont have your currency")
