@@ -14,9 +14,10 @@ class DadJokes:
     def rjoke(self):
         print(self.joke)
         print(self.answer)
-    def ranswer(self):
-        print(self.answer)
 
 r = random.randint(1,10)
-Thejoke = DadJokes(jokelist[r],answerlist[r])
+Thejoke = DadJokes(jokelist[r],"...")
+TheAnswer = DadJokes(" ",answerlist[r])
 Thejoke.rjoke()
+guess = input("what is the answer? :")
+TheAnswer.rjoke()
